@@ -87,22 +87,23 @@ library(dae)
 # Interaction plot for n = 1000
 interaction.ABC.plot(response = accuracy, x.factor = r, groups.factor = method_names,
                      trace.factor = sigma , data = answer_data_frame(1000), 
-                     title = NULL, key.title = c("bt", "t", "c", "e", "r", "a", 
-                                                 "r"))
+                     title = NULL)+theme(legend.position = "bottom")
+
 
 # Interaction plot for n = 2000
 interaction.ABC.plot(response = accuracy, x.factor = r, groups.factor = method_names,
                      trace.factor = sigma ,data = answer_data_frame(2000),
-                     title = NULL)
+                     title = NULL)+theme(legend.position = "bottom")
 
 # Interaction plot for n = 5000
 interaction.ABC.plot(response = accuracy, x.factor = r, groups.factor = method_names,
                      trace.factor = sigma ,data = answer_data_frame(5000),
-                     title = NULL)
+                     title = NULL)+theme(legend.position = "bottom")
+
 # Interaction plot for n = 10000
 interaction.ABC.plot(response = accuracy, x.factor = r, groups.factor = method_names,
                      trace.factor = sigma ,data = answer_data_frame(10000),
-                     title = NULL)
+                     title = NULL)+theme(legend.position = "bottom")
 
 
 
